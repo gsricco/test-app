@@ -1,0 +1,184 @@
+@import "../../assets/styles/sass/mixins";
+@import "../../assets/styles/sass/variables";
+
+.containerJobSearch {
+  @include containerPage();
+  height: 900px;
+  display: flex;
+  justify-content: center;
+
+
+  .jobSearchItems {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 1220px;
+    margin-top: 40px;
+
+    .itemFilter {
+      //display: flex;
+      //justify-content: space-around;
+      //align-items: flex-start;
+      width: 315px;
+      height: 360px;
+      //background: $controlColor;
+      margin-right: 30px;
+      background: #FFFFFF;
+      border: 1px solid #EAEBED;
+      border-radius: 12px;
+      padding: 20px;
+      //box-shadow: 1px 0px 2px rgb(0 0 0 / 20%), -1px -1px 9px rgb(0 0 0 / 20%);
+
+      .headerFilter{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 32px;
+
+
+        .titleItemFilter{
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 20px;
+          color: $textColor;
+        }
+        .btnItemFilter{
+          width:105px;
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+          color: $textDisabledColor;
+          border-radius: 8px;
+        }
+      }
+
+
+      .btnSendDataFilter{
+        width:270px;
+        height: 40px;
+        line-height: 21px;
+
+      }
+    }
+
+    .contentJobSearch {
+      width: 773px;
+      height: 660px;
+
+
+      .itemSearch{
+        width: 773px;
+        height: 48px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 12px;
+        border-radius: 8px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+
+        color: $textDisabledColor;
+
+        .btnSearch{
+          width: 83px;
+          height: 32px;
+          border-radius: 8px;
+        }
+
+      }
+
+      .itemVacancies{
+        width: 773px;
+        height: 137px;
+        border-radius: 8px;
+        margin: 12px 0;
+
+        .headerVacancies{
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          width: 743px;
+          margin-bottom: 12px;
+
+          & a{
+            text-decoration: none;
+          }
+
+          .titleVacancies{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            color: $controlColor;
+
+          }
+        }
+
+        .descriptionVacancies{
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          width: 773px;
+          //margin-bottom: 12px;
+
+          .salaryVacancies{
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            color: $textColor;
+            margin-right: 12px;
+          }
+
+          .timeWorkVacancies{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: $textColor;
+            margin-left: 12px;
+          }
+        }
+
+        .locationVacancies{
+          display: flex;
+          & img{
+            width: 14px;
+            height: 16px;
+            color:$textDisabledColor;
+            margin-right: 10px;
+          }
+          .placeLocation{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: $textColor;
+
+          }
+
+
+        }
+
+
+
+
+      }
+
+      .pagination{
+        margin-top: 40px;
+       display: flex;
+        justify-content: center;
+      }
+    }
+
+
+  }
+}

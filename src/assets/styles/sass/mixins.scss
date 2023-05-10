@@ -1,1 +1,12 @@
 @import "./variables";
+
+@mixin containerPage() {
+  border: 1px solid $pagesColor;
+  border-radius: 5px;
+  background: $pagesColor;
+  width: 1440px;
+  min-height: 820px;
+  margin: 0;
+  padding: 0;
+
+}

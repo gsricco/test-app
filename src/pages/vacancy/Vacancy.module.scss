@@ -1,0 +1,110 @@
+@import "../../assets/styles/sass/mixins";
+@import "../../assets/styles/sass/variables";
+
+.containerVacancy {
+  @include containerPage();
+  min-height: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+  .itemVacancies{
+    width: 773px;
+    height: 157px;
+    border-radius: 8px;
+    margin: 40px 0  20px 0;
+
+    .headerVacancies{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 743px;
+      margin-bottom: 12px;
+
+      .titleVacancies{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 34px;
+        color: $textColor;
+
+      }
+    }
+
+    .descriptionVacancies{
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 773px;
+      //margin-bottom: 12px;
+
+      .salaryVacancies{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 20px;
+        color: $textColor;
+        margin-right: 12px;
+      }
+
+      .timeWorkVacancies{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        color: $textColor;
+        margin-left: 12px;
+      }
+    }
+
+    .locationVacancies{
+      display: flex;
+      & img{
+        width: 14px;
+        height: 16px;
+        color:$textDisabledColor;
+        margin-right: 10px;
+      }
+      .placeLocation{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $textColor;
+
+      }
+
+
+    }
+
+
+
+
+  }
+
+  .descriptions{
+    width: 773px;
+    //height: 537px;
+    border-radius: 8px;
+    //margin: 12px 0;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: $textColor;
+
+      & b{
+        font-weight: 700;
+        line-height: 20px;
+      }
+
+
+
+  }
+
+}
+
+
+

@@ -1,0 +1,17 @@
+@import "../../assets/styles/sass/mixins";
+@import "../../assets/styles/sass/variables";
+
+.containerFavorites {
+  @include containerPage();
+  //border:1px solid #F5F5F5;
+  //border-radius: 5px;
+  //background: #F5F5F5;
+  //width:1440px;
+  //height: 820px;
+  //margin:0;
+  //padding: 0;
+  //box-sizing: border-box;
+  //
+  //position: relative;
+  //bottom:5px;
+}

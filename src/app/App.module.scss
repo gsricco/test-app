@@ -1,0 +1,14 @@
+@import "../assets/styles/sass/variables";
+
+.containerApp {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  //align-items: center;
+  background: $containerColor;
+  box-sizing: border-box;
+}

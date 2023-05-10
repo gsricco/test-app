@@ -2,9 +2,10 @@ import {ActionCreatorsMapObject, bindActionCreators, combineReducers, configureS
 import thunkMiddleware from "redux-thunk";
 import {useAppDispatch} from "../hooks/hooks";
 import {useMemo} from "react";
+import {auth} from "../pages/login/authUser-reducer";
 
 const rootReducer = combineReducers({
-
+    auth,
 })
 
 
