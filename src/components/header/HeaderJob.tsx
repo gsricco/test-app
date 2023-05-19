@@ -5,7 +5,6 @@ import logo from '../../assets/images/logoJob.svg'
 import {NavLink} from "react-router-dom";
 import {Path} from "../../enums/path";
 
-
 const HeaderJob = () => {
     return (
         <div className={styles.containerHeader}>
@@ -23,7 +22,6 @@ const HeaderJob = () => {
                     </div>
                 </nav>
             </Box>
-
         </div>
     );
 };

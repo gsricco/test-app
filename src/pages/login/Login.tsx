@@ -10,8 +10,6 @@ const Login = () => {
 
     const form = useForm({
         initialValues: {name: '', email: '', age: 0},
-
-        // functions will be used to validate values at corresponding key
         validate: {
             name: (value: string) => (value.length < 2 ? 'Name must have at least 2 letters' : null),
             email: (value: string) => (/^\S+@\S+$/.test(value) ? null : 'Invalid email'),
@@ -19,12 +17,10 @@ const Login = () => {
         },
     });
 
-
-
     useEffect(() => {
         dispatch(authUser());
         dispatch(getVacancies({catalogues:0,payment_to:0, payment_from:0,keyword:''}))
-    }, [])
+    }, [dispatch])
 
     return (
         <Box maw={320} mx="auto">

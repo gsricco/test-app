@@ -1,10 +1,9 @@
+@import "../../assets/styles/sass/mixins";
+@import "../../assets/styles/sass/variables";
+
 .page404{
-  //border: 1px solid red;
-  display: flex;
+  @include flex(center, flex-start);
   flex-wrap: wrap;
-  justify-content: center;
-  //align-content: flex-start;
-  align-items: flex-start;
   width: 340px;
   height: 366px;
   margin-top: 120px;
@@ -14,18 +13,8 @@
   font-size: 24px;
   line-height: 29px;
 
-  //& img {
-  //  width: 240px;
-  //  height: 230px;
-  //  margin-bottom: 32px;
-  //}
-
   .searchBack{
-    width: 164px;
-    height: 42px;
-    border-radius: 8px;
-    background: #DEECFF;
+    @include styleBtn(164px,42px,$pagesColor, $controlColor);
     margin: 32px 0 ;
-    color:#3B7CD3;
   }
 }

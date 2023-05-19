@@ -2,6 +2,11 @@
 
 @mixin Poppins() {
   font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.02em;
 }
 
 @mixin containerPage() {
@@ -12,5 +17,23 @@
   min-height: 820px;
   margin: 0;
   padding: 0;
+}
 
+@mixin flex($justifyContent, $alignItems) {
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+
+@mixin styleBtn($width,$height, $background,$color) {
+  width: $width;
+  height: $height;
+  border-radius: 8px;
+  background: $background;
+  margin: 32px 0;
+  color: $color;
+
+  &:hover {
+    background: $hoverColor;
+  }
 }

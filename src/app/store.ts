@@ -10,14 +10,12 @@ const rootReducer = combineReducers({
     vacancies,
 })
 
-
 export const store = configureStore({
     reducer: rootReducer,
     middleware: (getDefaultMiddleware) =>
         getDefaultMiddleware().prepend(thunkMiddleware)
 })
 
-// определить автоматически тип всего объекта состояния
 export type RootState = ReturnType<typeof store.getState>
 export type AppDispatch = typeof store.dispatch
 export type RootReducerType = typeof rootReducer

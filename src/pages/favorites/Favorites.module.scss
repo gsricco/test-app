@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
 
-  .contentJobSearch{
+  .contentJobSearch {
     width: 773px;
     height: 660px;
     display: flex;
@@ -15,15 +15,14 @@
     justify-content: center;
     align-content: flex-start;
 
-      .pagination{
-        width: 100%;
-        margin-top: 40px;
-        display: flex;
-        justify-content: center;
-      }
+    .pagination {
+      width: 100%;
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
     }
-
   }
+}
 
 
 
