@@ -73,3 +73,56 @@
     }
   }
 }
+@media (max-width: 960px) {
+  .itemVacancies {
+    width: 330px;
+    height: 110px;
+
+    .headerVacancies {
+      width: 310px;
+      margin-bottom: 2px;
+
+      .titleVacancies {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        color: $controlColor;
+
+      }
+    }
+
+    .descriptionVacancies {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 300px;
+      height: 20px;
+
+
+      .salaryVacancies {
+        font-size: 12px;
+        line-height: 12px;
+      }
+
+      .timeWorkVacancies {
+        font-size: 12px;
+        line-height: 12px;
+      }
+    }
+
+    .locationVacancies {
+      display: flex;
+
+      & img {
+        color: $textDisabledColor;
+        margin-right: 10px;
+      }
+
+      .placeLocation {
+        line-height: 16px;
+      }
+    }
+  }
+}

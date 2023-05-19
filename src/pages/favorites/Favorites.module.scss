@@ -23,7 +23,12 @@
     }
   }
 }
-
+@media (max-width: 960px) {
+  .containerFavorites {
+    width: 340px;
+    height: 100vh;
+  }
+}
 
 
 

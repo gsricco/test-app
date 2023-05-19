@@ -11,3 +11,11 @@
   background: $containerColor;
   box-sizing: border-box;
 }
+
+@media (max-width: 960px) {
+  .containerApp {
+    margin: auto;
+    width: 360px;
+    min-height: 100vh;
+  }
+}

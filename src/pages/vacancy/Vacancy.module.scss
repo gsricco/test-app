@@ -39,7 +39,6 @@
       justify-content: flex-start;
       align-items: flex-start;
       width: 773px;
-      //margin-bottom: 12px;
 
       .salaryVacancies{
         font-weight: 600;
@@ -85,9 +84,7 @@
 
   .descriptions{
     width: 773px;
-    //height: 537px;
     border-radius: 8px;
-    //margin: 12px 0;
 
     font-family: 'Inter';
     font-style: normal;
@@ -107,5 +104,50 @@
 
 }
 
+
+@media (max-width: 960px) {
+  .containerVacancy {
+    @include containerPage();
+    width: 340px;
+    min-height: 90vh;
+
+    .itemVacancies{
+      width: 330px;
+      height: 110px;
+      margin: 10px ;
+
+      .headerVacancies{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 310px;
+        margin-bottom: 5px;
+
+        .titleVacancies{
+          font-size: 16px;
+          line-height: 16px;
+        }
+      }
+
+      .descriptionVacancies{
+        width: 330px;
+
+        .salaryVacancies,.timeWorkVacancies{
+          font-size: 12px;
+          line-height: 12px;
+          margin: 5px;
+        }
+      }
+
+    }
+
+    .descriptions{
+      width: 330px;
+      font-size: 12px;
+      line-height: 18px;
+
+    }
+  }
+}
 
 

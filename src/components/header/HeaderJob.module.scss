@@ -55,3 +55,26 @@
     }
   }
 }
+
+
+@media (max-width: 960px) {
+  .containerHeader{
+    width: 340px;
+    height: 84px;
+    .box {
+      width: 340px;
+      display: block;
+      .logo {
+        @include flex(center, center);
+        width: 100px;
+        height: 36px;
+        padding: 5px 30px 10px 120px;
+      }
+
+      .itemMenuLink {
+        @include flex(space-around, center);
+
+      }
+    }
+  }
+}

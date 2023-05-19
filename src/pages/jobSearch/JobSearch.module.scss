@@ -83,72 +83,6 @@
 
       }
 
-      .itemVacancies {
-        width: 773px;
-        height: 137px;
-        border-radius: 8px;
-        margin: 12px 0;
-
-        .headerVacancies {
-          @include flex(space-between, flex-start);
-          width: 743px;
-          margin-bottom: 12px;
-
-          & a {
-            text-decoration: none;
-          }
-
-          .titleVacancies {
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 24px;
-            color: $controlColor;
-          }
-        }
-
-        .descriptionVacancies {
-          @include flex(flex-start, flex-start);
-          width: 773px;
-
-          .salaryVacancies {
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 20px;
-            color: $textColor;
-            margin-right: 12px;
-          }
-
-          .timeWorkVacancies {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 20px;
-            color: $textColor;
-            margin-left: 12px;
-          }
-        }
-
-        .locationVacancies {
-          display: flex;
-
-          & img {
-            width: 14px;
-            height: 16px;
-            color: $textDisabledColor;
-            margin-right: 10px;
-          }
-
-          .placeLocation {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 19px;
-            color: $textColor;
-          }
-        }
-      }
-
       .pagination {
         margin-top: 40px;
         display: flex;
@@ -180,6 +114,33 @@
     .searchBack {
       @include styleBtn(164px, 42px, $textDisabledColor, $controlColor);
       margin: 32px 0;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .containerJobSearch{
+    width: 340px;
+    display: block;
+    text-align: center;
+    .jobSearchItems {
+      display: block;
+      width: 340px;
+      margin:10px;
+
+      .contentJobSearch {
+        width: 340px;
+        margin-top: 10px;
+        .itemSearch {
+          width: 320px;
+        }
+
+        .pagination {
+          margin-top: 40px;
+          display: flex;
+          justify-content: center;
+        }
+      }
     }
   }
 }
