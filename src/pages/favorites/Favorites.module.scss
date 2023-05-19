@@ -3,15 +3,30 @@
 
 .containerFavorites {
   @include containerPage();
-  //border:1px solid #F5F5F5;
-  //border-radius: 5px;
-  //background: #F5F5F5;
-  //width:1440px;
-  //height: 820px;
-  //margin:0;
-  //padding: 0;
-  //box-sizing: border-box;
-  //
-  //position: relative;
-  //bottom:5px;
-}
+  height: 900px;
+  display: flex;
+  justify-content: center;
+
+  .contentJobSearch{
+    width: 773px;
+    height: 660px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+
+      .pagination{
+        width: 100%;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+  }
+
+
+
+
+
+

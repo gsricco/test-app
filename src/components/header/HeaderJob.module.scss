@@ -1,3 +1,4 @@
+@import "../../assets/styles/sass/mixins";
 @import "../../assets/styles/sass/variables";
 
 .containerHeader {
@@ -14,8 +15,8 @@
     align-items: center;
     background: $headerColor;
     border-radius: 5px 5px 0 0;
-
-    font-family: 'Poppins';
+    @include Poppins();
+    //font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 24px;

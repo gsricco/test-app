@@ -16,7 +16,7 @@ type VacancyPageParams={
 
 const Vacancy = () => {
     const [value, setValue] = useState(false);
-    const vacancies = useAppSelector(state => state.auth.vacancies.objects)
+    const vacancies = useAppSelector(state => state.vacancies.vacancies.objects)
 
 
     const {id} = useParams<VacancyPageParams>()
@@ -41,7 +41,8 @@ const Vacancy = () => {
                 <div  className={styles.headerVacancies}>
                         <Text className={styles.titleVacancies} >{vac.profession}</Text>
                     <div onClick={setColorStar}>
-                        <img src={value?starBlue:star} alt="Star"/>
+                        {/*<img src={value?starBlue:star} alt="Star"/>*/}
+                        <img src={vac.favorite?starBlue:star} alt="Star"/>
                     </div>
                 </div>
                 <div className={styles.descriptionVacancies}>

@@ -1,14 +1,14 @@
 import React, {useEffect, useState} from 'react';
-import styles from "../JobSearch.module.scss";
+import styles from "./ItemVacancies.module.scss";
 import {Paper, Text} from "@mantine/core";
 import starBlue from "../../../assets/images/icons/StarBlue.svg";
 import star from "../../../assets/images/icons/Star.svg";
 import iconLocation from "../../../assets/images/icons/map-pin-grey.svg";
 import {ItemVacanciesType} from "../../../api/vacanciesApi";
-import {Link} from "react-router-dom";
+import {Link, LinkProps} from "react-router-dom";
 import {Path} from "../../../enums/path";
 import {useAppDispatch} from "../../../hooks/hooks";
-import {getFavorite} from "../../login/authUser-reducer";
+import {getCategories, getFavorite, setFavoriteStatus, setNoFavoriteStatus} from "../../vacancy/vacancies-reducer";
 
 
 type PropsItemVacanciesType ={
@@ -16,23 +16,24 @@ type PropsItemVacanciesType ={
     vac: ItemVacanciesType
     index:number
 }
+
+
+
 const ItemVacancies = ({index,vac}:PropsItemVacanciesType) => {
     const dispatch = useAppDispatch()
 
-    const [value, setValue] = useState(false);
+    const [value, setValue] = useState(vac.favorite);
 
     const setColorStar =()=>{
-        // setValue(!value)
-        // dispatch(setFavorite({id:vac.id}))
-
+        value?dispatch(setNoFavoriteStatus({id:vac.id})):dispatch(setFavoriteStatus({id:vac.id}))
+        setValue(!value)
     }
 
-    // useEffect(()=>{
-    //     dispatch(getFavorite())
-    // },[])
 
+    useEffect(()=>{
+        // dispatch(getFavorite())
+    },[])
 
-    console.log(vac)
     return (
         <Paper key={index} shadow="xs" p="md" className={styles.itemVacancies}>
             <div  className={styles.headerVacancies}>
@@ -40,6 +41,7 @@ const ItemVacancies = ({index,vac}:PropsItemVacanciesType) => {
                     <Text className={styles.titleVacancies} >{vac.profession}</Text>
                 </Link>
                 <div onClick={setColorStar}>
+                    {/*<img src={value?starBlue:star} alt="Star"/>*/}
                     <img src={vac.favorite?starBlue:star} alt="Star"/>
                 </div>
             </div>
@@ -57,3 +59,4 @@ const ItemVacancies = ({index,vac}:PropsItemVacanciesType) => {
 };
 
 export default ItemVacancies;
+

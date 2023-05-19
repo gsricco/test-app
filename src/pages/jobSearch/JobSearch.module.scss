@@ -29,14 +29,14 @@
       padding: 20px;
       //box-shadow: 1px 0px 2px rgb(0 0 0 / 20%), -1px -1px 9px rgb(0 0 0 / 20%);
 
-      .headerFilter{
+      .headerFilter {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         margin-bottom: 32px;
 
 
-        .titleItemFilter{
+        .titleItemFilter {
           font-family: 'Inter';
           font-style: normal;
           font-weight: 700;
@@ -44,8 +44,9 @@
           line-height: 20px;
           color: $textColor;
         }
-        .btnItemFilter{
-          width:105px;
+
+        .btnItemFilter {
+          width: 105px;
           font-family: 'Inter';
           font-style: normal;
           font-weight: 500;
@@ -57,8 +58,8 @@
       }
 
 
-      .btnSendDataFilter{
-        width:270px;
+      .btnSendDataFilter {
+        width: 270px;
         height: 40px;
         line-height: 21px;
 
@@ -70,7 +71,7 @@
       height: 660px;
 
 
-      .itemSearch{
+      .itemSearch {
         width: 773px;
         height: 48px;
         display: flex;
@@ -87,7 +88,7 @@
 
         color: $textDisabledColor;
 
-        .btnSearch{
+        .btnSearch {
           width: 83px;
           height: 32px;
           border-radius: 8px;
@@ -95,24 +96,24 @@
 
       }
 
-      .itemVacancies{
+      .itemVacancies {
         width: 773px;
         height: 137px;
         border-radius: 8px;
         margin: 12px 0;
 
-        .headerVacancies{
+        .headerVacancies {
           display: flex;
           justify-content: space-between;
           align-items: flex-start;
           width: 743px;
           margin-bottom: 12px;
 
-          & a{
+          & a {
             text-decoration: none;
           }
 
-          .titleVacancies{
+          .titleVacancies {
             font-family: 'Inter';
             font-style: normal;
             font-weight: 600;
@@ -123,14 +124,14 @@
           }
         }
 
-        .descriptionVacancies{
+        .descriptionVacancies {
           display: flex;
           justify-content: flex-start;
           align-items: flex-start;
           width: 773px;
           //margin-bottom: 12px;
 
-          .salaryVacancies{
+          .salaryVacancies {
             font-weight: 600;
             font-size: 16px;
             line-height: 20px;
@@ -138,7 +139,7 @@
             margin-right: 12px;
           }
 
-          .timeWorkVacancies{
+          .timeWorkVacancies {
             font-weight: 400;
             font-size: 16px;
             line-height: 20px;
@@ -147,15 +148,17 @@
           }
         }
 
-        .locationVacancies{
+        .locationVacancies {
           display: flex;
-          & img{
+
+          & img {
             width: 14px;
             height: 16px;
-            color:$textDisabledColor;
+            color: $textDisabledColor;
             margin-right: 10px;
           }
-          .placeLocation{
+
+          .placeLocation {
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -168,17 +171,47 @@
         }
 
 
-
-
       }
 
-      .pagination{
+      .pagination {
         margin-top: 40px;
-       display: flex;
+        display: flex;
         justify-content: center;
       }
     }
 
 
+  }
+
+  .noSearch {
+    //border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    //align-content: flex-start;
+    align-items: flex-start;
+    width: 340px;
+    height: 366px;
+    margin-top: 120px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    & img {
+      width: 240px;
+      height: 230px;
+      margin-bottom: 32px;
+    }
+
+    .searchBack{
+      width: 164px;
+      height: 42px;
+      border-radius: 8px;
+      background: #DEECFF;
+      margin: 32px 0 ;
+      color:#3B7CD3;
+    }
   }
 }

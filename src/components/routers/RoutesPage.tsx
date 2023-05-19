@@ -26,7 +26,7 @@ const RoutesPage = () => {
     return (
         <div>
             <Routes>
-                <Route path="/" element={<Navigate to={Path.MAIN} />} />
+                <Route path="/" element={<Navigate to={Path.JOB_SEARCH} />} />
                 {routes.map(({ path, component }) => (
                     <Route key={path} path={path} element={component} />
                 ))}

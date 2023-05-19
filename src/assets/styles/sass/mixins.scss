@@ -1,5 +1,9 @@
 @import "./variables";
 
+@mixin Poppins() {
+  font-family: "Poppins";
+}
+
 @mixin containerPage() {
   border: 1px solid $pagesColor;
   border-radius: 5px;
