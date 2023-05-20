@@ -123,20 +123,43 @@
     width: 340px;
     display: block;
     text-align: center;
+
+    & input {
+      height: 18px;
+    }
     .jobSearchItems {
-      display: block;
+      display: inline-block;
       width: 340px;
       margin:10px;
 
+
+      .itemFilter {
+        width: 320px;
+        height: 300px;
+
+        .headerFilter {
+          margin-bottom: 1px;
+
+          .titleItemFilter {
+            font-size: 16px;
+          }
+        }
+
+        .btnSendDataFilter {
+          width: 250px;
+          height: 36px;
+          line-height: 21px;
+        }
+      }
       .contentJobSearch {
-        width: 340px;
+        width: 320px;
         margin-top: 10px;
         .itemSearch {
           width: 320px;
         }
 
         .pagination {
-          margin-top: 40px;
+          margin-top: 20px;
           display: flex;
           justify-content: center;
         }
